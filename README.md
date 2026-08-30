@@ -21,17 +21,18 @@
 
 ## نقطة الانطلاق الحالية
 
-نعرف مسبقًا أن هناك طرقًا معروفة غير ديدكاند وكوشي تستحق الدراسة والمقارنة، منها:
+أثبتت المراجعة الأولية للأدبيات أن هناك عائلة واسعة من البناءات تتجاوز العرضين المدرسيين ديدكاند/كوشي. لكن درجة استقلالها التأسيسي متفاوتة.
 
-1. التوسعات العشرية والثنائية اللانهائية.
-2. الكسور المستمرة (Continued Fractions).
-3. نظرية إيدوكسوس للنسب ومقارنة المضاعفات.
-4. أعداد إيدوكسوس الحديثة المبنية من almost homomorphisms \(\mathbb{Z}\to\mathbb{Z}\).
-5. المجالات المتداخلة والبنى القريبة منها.
-6. constructions باستعمال hyperrationals / ultrafilters ثم standard part أو quotient مناسب.
-7. الأعداد السريالية بوصفها بنية أوسع تحتوي نسخة من \(\mathbb{R}\).
+المسارات الأعلى أولوية الآن هي:
 
-هذه القائمة **خريطة مقارنة أولية وليست ادعاءً بالجدة**.
+1. **Eudoxus / Schanuel / Street / near-endomorphisms of \(\mathbb{Z}\)** — أقوى مرشح حاليًا لمسار مختلف بنيويًا، يبدأ مباشرة من \(\mathbb{Z}\).
+2. **Rieger continued fractions** — بناء من توسعات continued fractions مع فصل واضح بين finite rational data وinfinite irrational data.
+3. **de Bruijn additive/digit expansions** — بناء للأعداد الحقيقية دون المرور أولًا بـ \(\mathbb{Q}\).
+4. **Faltin–Metropolis–Ross–Rota strings/wreath construction** — بناء جبري من strings/formal Laurent-type expansions modulo carries.
+5. **Engel/Sylvester/alternating-series/infinite-product constructions** — عائلة كبيرة من النماذج المبنية من توسعات نسبية لانهائية.
+6. **Domain-theoretic, nonstandard/ultrafilter, abstraction and bicimal approaches** — مسارات مقارنة مهمة، لكنها ليست الأولوية الأولى حاليًا.
+
+كما أن البحث الأولي لم يعثر على بناء معروف ومكرس يجعل **التكامل نفسه** primitive construction لـ \(\mathbb{R}\) من \(\mathbb{N}\)، \(\mathbb{Z}\)، أو \(\mathbb{Q}\). هذه ملاحظة بحثية مؤقتة لا ادعاء بعدم الوجود.
 
 ## قاعدة منهجية
 
@@ -49,9 +50,12 @@
 - [`docs/CURRENT_STATE.md`](docs/CURRENT_STATE.md): لقطة الحالة التي يبدأ منها أي استئناف للعمل.
 - [`docs/DECISIONS.md`](docs/DECISIONS.md): سجل القرارات الرسمية.
 - [`docs/RESEARCH_LOG.md`](docs/RESEARCH_LOG.md): سجل زمني للأفكار والتجارب والنتائج والتعلم.
+- [`docs/LITERATURE_REVIEW_2026-08-30.md`](docs/LITERATURE_REVIEW_2026-08-30.md): مراجعة الأدبيات الأولية الموسعة وتصنيف البناءات البديلة المعروفة.
 
 ## الحالة
 
-**المرحلة الحالية:** استكشاف تأسيسي ومقارنة المسارات المعروفة قبل اقتراح طريق جديد.
+**المرحلة الحالية:** مراجعة تأسيسية مقارنة للمسارات المعروفة قبل اقتراح طريق جديد.
+
+**أولوية الدراسة التالية:** Eudoxus/near-endomorphisms، ثم Rieger، ثم de Bruijn/FMRR.
 
 **تاريخ تأسيس الذاكرة الرسمية:** 2026-08-30.
