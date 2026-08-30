@@ -4,9 +4,9 @@ _Last updated: 2026-08-30_
 
 ## Current phase
 
-**Foundational exploration and route comparison.**
+**Foundational literature review and route comparison.**
 
-The project has not yet adopted a new construction of \(\mathbb{R}\). The immediate task is to understand genuinely different known routes well enough to avoid rediscovering Cauchy or Dedekind in disguise.
+The project has not yet adopted a new construction of \(\mathbb{R}\). A first broad literature search has now been completed and documented in [`LITERATURE_REVIEW_2026-08-30.md`](LITERATURE_REVIEW_2026-08-30.md).
 
 ## Governing question
 
@@ -16,56 +16,67 @@ How can one construct the real numbers from \(\mathbb{N}\), \(\mathbb{Z}\), or \
 
 1. A finite algebraic closure of \(\mathbb{Q}\) cannot by itself produce all of \(\mathbb{R}\); some source of infinite information/completion is unavoidable if the target is the full continuum.
 2. Infinite processes need not be represented specifically by Cauchy sequences.
-3. Known alternative viewpoints include digit expansions, continued fractions, Eudoxus-style comparison of multiples, almost homomorphisms \(\mathbb{Z}\to\mathbb{Z}\), nonstandard/hyperrational quotients, and broader ordered-field constructions.
-4. A central distinction must be maintained between:
-   - a representation of already-known reals;
-   - a construction of a complete ordered field;
-   - a construction merely isomorphic to a known one;
-   - a genuinely distinct foundational mechanism.
+3. The literature contains numerous constructions beyond the textbook pair Dedekind/Cauchy, but their foundational independence varies substantially.
+4. The strongest currently identified family for this project is the Eudoxus/Schanuel/Street construction using near-endomorphisms or almost homomorphisms \(\mathbb{Z}\to\mathbb{Z}\) modulo bounded error.
+5. Continued fractions, de Bruijn additive expansions, and the Faltin–Metropolis–Ross–Rota string/wreath construction are also high-value alternatives.
+6. Shiu, Pintilie, Engel/Sylvester, alternating-series, and infinite-product constructions form an important family of expansion-based models, but many recover operations/completeness through approximation, null sequences, or suprema.
+7. Nested rational intervals and Cauchy filters should not be counted as strong alternatives: they are close variants of completion. Maier–Maier is essentially Dedekind without canonical representatives.
+8. Arthan's 2001 “irrational construction” changes the intermediate algebraic ring but still explicitly uses Dedekind cuts, so it does not satisfy the strict project criterion.
+9. A targeted first search did not locate an established **integration-first construction** of \(\mathbb{R}\) in which integration/Riemann accumulation is the primitive bridge from \(\mathbb{N}\), \(\mathbb{Z}\), or \(\mathbb{Q}\). This is a provisional negative search result, not a nonexistence theorem.
+10. A central distinction must always be maintained between representation, model construction, completion mechanism, and genuinely distinct foundational mechanism.
 
-## Highest-priority known routes to study next
+## Priority routes after literature review
 
-### Route A — Continued fractions
-
-Primitive data: an infinite sequence of integers/natural numbers.
-
-Key question: does the finite/infinite distinction between rational and irrational continued fractions suggest a useful construction principle beyond mere representation?
-
-### Route B — Classical Eudoxus ratios
-
-Primitive phenomenon: comparisons among integer multiples of magnitudes.
-
-Key question: how much of a real ratio can be characterized purely by the total pattern of comparisons
-\[
-mA \lessgtr nB?
-\]
-
-### Route C — Modern Eudoxus reals / almost homomorphisms
+### Priority 1 — Eudoxus / near-endomorphisms / quasimorphisms
 
 Primitive object: a map
 \[
 f:\mathbb{Z}\to\mathbb{Z}
 \]
-whose additive defect is bounded, modulo bounded difference.
+with bounded additive defect, modulo bounded difference.
 
-Key question: how does the real number emerge from the global behavior of integer multiples without making a limit sequence the primitive object?
+Why first: it starts directly from integers; no rational intermediate stage is needed; the real number is encoded in global large-scale behavior rather than as a cut or Cauchy limit object. Later work also generalizes the mechanism to field completions.
 
-## Current methodological preference
+### Priority 2 — Rieger continued fractions
 
-Do **not** begin by inventing a new operation.
+Primitive data: finite/infinite continued-fraction expansions built from integers/natural numbers.
 
-First compare Routes A–C precisely, identify what each uses as its source of infinite information, and determine which structural ideas are genuinely independent of Cauchy/Dedekind.
+Key issue: determine exactly where completeness/suprema enter, so that representation novelty is not confused with foundational novelty.
+
+### Priority 3 — de Bruijn additive expansions
+
+Primitive data: digit/additive expansions directly from integer data, explicitly avoiding a prior rational construction.
+
+### Priority 4 — Faltin–Metropolis–Ross–Rota
+
+Primitive data: integer-coefficient strings/formal Laurent-type series modulo carrying relations.
+
+## Secondary comparison families
+
+- Engel and Sylvester series constructions.
+- Alternating Engel/Sylvester constructions.
+- Infinite-product constructions.
+- Shiu/Pintilie subseries constructions.
+- Domain-theoretic interval-domain reals.
+- Nonstandard/ultrafilter quotient constructions.
+- Reals by abstraction / ratios of magnitudes.
+- Decimal/binary/bicimal constructions, including recent work by Klazar and Panza.
 
 ## Immediate next research task
 
-Produce a rigorous comparative note for Continued Fractions, Classical Eudoxus Ratios, and Modern Eudoxus Reals covering:
+Produce a rigorous **foundational decomposition** of the Eudoxus/near-endomorphism construction covering:
 
-- primitive objects;
-- equivalence relation, if any;
-- where infinity enters;
-- how rationals embed;
-- how irrationals arise;
-- how field operations are recovered;
-- how completeness is obtained or inherited;
-- exact relationship to Cauchy and Dedekind constructions;
-- what conceptual mechanism may be reusable for a new route.
+- exact primitive structure required from \(\mathbb{Z}\);
+- definition of slope/near-endomorphism;
+- bounded-error equivalence;
+- construction of addition and multiplication;
+- order;
+- embedding of \(\mathbb{Z}\) and emergence of \(\mathbb{Q}\);
+- multiplicative inverses;
+- Archimedean property;
+- proof of completeness;
+- exact point at which infinity enters;
+- whether the construction is best interpreted as a fundamentally new mechanism or as a disguised/generalized completion;
+- which pieces could be reused in a genuinely new route.
+
+Only after that should the same decomposition be applied to Rieger and de Bruijn/FMRR.
